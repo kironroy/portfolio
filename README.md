@@ -1,3 +1,1 @@
-# portfolio
-
-Ally Reynolds Portfolio
+# Ally Reynolds Portfolio

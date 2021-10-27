@@ -10,6 +10,11 @@ html {
 body {
   max-width: 1440px;
   margin: auto;
+  background-color: rgba(0, 0, 0, 0.034);
+}
+
+main {
+  background-color: #fff;
 }
 
 h1 {
@@ -27,6 +32,21 @@ h2 {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: -0.4px;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+nav ul li a {
+  color: #222;
+  text-decoration: none;
 }
 
 p {
@@ -63,9 +83,10 @@ button {
 }
 
 header {
-  background-color: #222;
-  color: #fff;
+  background-color: #d8b33c;
+  color: #222;
   font-size: 0.67rem;
+  font-weight: 700;
   text-align: right;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -73,8 +94,8 @@ header {
 }
 
 footer {
-  background-color: #222;
-  color: #fff;
+  background-color: #d8b33c;
+  color: #222;
   font-size: 0.67rem;
   text-align: center;
   padding-top: 0.5rem;
@@ -131,7 +152,7 @@ footer {
 }
 
 #portfolio-section > div > a {
-  color: #d8b33c;
+  color: #4a3b64;
   font-size: 2rem;
   margin: 0;
 }
@@ -143,4 +164,33 @@ footer {
 
 #my-story h2 {
   margin: 1rem 0;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #222;
+}
+
+.highlight h2 {
+  color: #fff;
+}
+
+.highlight a {
+  color: #fdcd30;
+  text-decoration: line;  
+  font-size: 2rem;
+}
+
+.highlight.invert {
+  flex-direction: row-reverse;
+}
+
+.highlight > div {
+  flex-grow: 1;
+}
+
+.highlight > img {
+  max-width: 50%;
 }

@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
 
+:root {
+  --header-footer-color: #fdcd30;
+  --highlight-color: #222;
+  /* --highlight-color: #154af8; */
+  --highlight-link-color: #c7fd30;
+}
+
 html {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
@@ -83,7 +90,7 @@ button {
 }
 
 header {
-  background-color: #d8b33c;
+  background-color: var(--header-footer-color);
   color: #222;
   font-size: 0.67rem;
   font-weight: 700;
@@ -94,7 +101,7 @@ header {
 }
 
 footer {
-  background-color: #d8b33c;
+  background-color: var(--header-footer-color);
   color: #222;
   font-size: 0.67rem;
   text-align: center;
@@ -170,7 +177,7 @@ footer {
   display: flex;
   align-items: center;
   text-align: center;
-  background-color: #222;
+  background-color: var(--highlight-color);
 }
 
 .highlight h2 {
@@ -178,8 +185,8 @@ footer {
 }
 
 .highlight a {
-  color: #fdcd30;
-  text-decoration: line;  
+  color: var(--highlight-link-color);
+  text-decoration: line;
   font-size: 2rem;
 }
 

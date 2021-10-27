@@ -30,26 +30,20 @@
   <body>
     <main>
       <div class="hero">
-        <h1>Hi, I'm Ally.</h1>
+        <h1>Hi, I'm<br />Ally.</h1>
         <img src="img/Ally2.png" alt="A picture of me smiling." />
       </div>
       <div id="contact-me">
         <h2>This is how to contact me.</h2>
         <form id="contact-form" action="" method="post">
+          <label for="name">Name: </label>
+          <input id="name" type="text" name="name" required />
+          <label for="email">Email: </label>
+          <input id="email" type="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
           <div>
-            <label for="name">Name: </label>
-            <input id="name" type="text" name="name" required />
-          </div>
-          <div>
-            <label for="email">Email: </label>
-            <input id="email" type="email" name="email" required />
-          </div>
-          <div>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <div>
-            <button type="submit">Contact Ally</button>
+            <button class="contact-ally-btn" type="submit">Contact Me</button>
             <button type="reset">Reset</button>
           </div>
         </form>

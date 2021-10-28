@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
 
 :root {
-  --header-footer-color: #fdcd30;
+  --header-footer-color: #c7fd30;
   --highlight-color: #313131;
   /* --highlight-color: #154af8; */
   --highlight-link-color: #c7fd30;
@@ -79,15 +79,15 @@ form > div {
 input,
 textarea {
   font-size: 1rem;
-  border-radius: 6px;
-  border: solid 2px #555555;
-  background-color: #fcfcfc;
+  border-radius: 9px;
+  border: solid 2px var(--highlight-color);
+  background-color: #fff;
 }
 
 button {
   font-size: 0.75rem;
-  padding: 0.25rem 5%;
-  border-radius: 6px;
+  padding: 0.4rem 5%;
+  border-radius: 9px;
   border: solid 3px #e7e7e7;
   margin: 0.25rem;
   background-color: #e7e7e7;
@@ -117,8 +117,8 @@ footer {
 
 .contact-ally-btn {
   font-size: 0.75rem;
-  padding: 0.25rem 5%;
-  border-radius: 6px;
+  padding: 0.4rem 5%;
+  border-radius: 9px;
   border: solid 3px var(--highlight-link-color);
   margin: 0.25rem;
   background-color: var(--highlight-link-color);
@@ -253,4 +253,30 @@ span.pub {
   margin-right: 1px;
   text-align: center;
   width: 1.6em;
+}
+
+#work-item-header {
+  margin: 0;
+  text-align: center;
+}
+
+#work-item-image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.work-item-text {
+  padding: 0.3rem 15%;
+}
+
+.work-item-text p,
+.work-item-text ul {
+  margin-top: 0;
+  color: #fff;
+}
+
+.work-item-text h3 {
+  margin-top: 0;
+  margin-bottom: 0.05rem;
+  color: #fff;
 }

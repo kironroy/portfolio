@@ -28,8 +28,7 @@ main {
 
 h1 {
   font-weight: 700;
-  color: var(--highlight-link-color);
-  text-shadow: 10px 8px var(--main-color);
+
   font-size: 4rem;
   text-transform: uppercase;
   text-align: right;
@@ -71,7 +70,7 @@ form {
   grid-template-columns: auto;
 }
 
-form > div {
+form>div {
   display: flex;
   justify-content: center;
 }
@@ -135,6 +134,8 @@ footer {
 }
 
 .hero h1 {
+  color: var(--highlight-link-color);
+  text-shadow: 8px 6px var(--main-color);
   position: absolute;
   bottom: 0;
   right: 1rem;
@@ -153,18 +154,18 @@ footer {
   width: 100%;
 }
 
-#portfolio-section > div {
+#portfolio-section>div {
   position: absolute;
   left: 1rem;
   top: 1rem;
 }
 
-#portfolio-section > div > h2 {
+#portfolio-section>div>h2 {
   color: #fff;
   margin: 0;
 }
 
-#portfolio-section > div > a {
+#portfolio-section>div>a {
   color: var(--highlight-link-color);
   text-decoration: underline dotted var(--highlight-link-dotted);
   font-size: 2rem;
@@ -206,11 +207,11 @@ footer {
   flex-direction: row-reverse;
 }
 
-.highlight > div {
+.highlight>div {
   flex-grow: 1;
 }
 
-.highlight > img {
+.highlight>img {
   max-width: 50%;
 }
 

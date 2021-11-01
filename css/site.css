@@ -116,6 +116,10 @@ footer {
   letter-spacing: -0.4px;
 }
 
+#copyright-info {
+  font-size: 0.47rem;
+}
+
 .contact-ally-btn {
   font-size: 0.75rem;
   padding: 0.4rem 5%;

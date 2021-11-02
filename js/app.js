@@ -4,8 +4,10 @@
   app.portfolioItems = [];
   app.selectedItem = {};
 
-  app.homepage = function () {
+  app.homepage = async function () {
     copyrightInfo();
+    await loadPageData();
+    loadPortfolioPageData();
     wireContactForm();
   };
 
@@ -91,5 +93,53 @@
 
     const challengesText = document.querySelector('#challenges-text p');
     challengesText.innerText = app.selectedItem.challengesText;
+  }
+
+  function loadPortfolioPageData() {
+    const originalItems = document.querySelectorAll('.highlight');
+    const main = document.getElementById('portfolio-main');
+    const newItems = [];
+
+    for (let i = 0; i < app.portfolioItems.length; i++) {
+      const el = app.portfolioItems[i];
+      const highlight = document.createElement('div');
+      highlight.classList.add('highlight');
+      if (i % 2 > 0) {
+        highlight.classList.add('invert');
+      }
+
+      const textDiv = document.createElement('div');
+      const h2 = document.createElement('h2');
+      const a = document.createElement('a');
+
+      const titleWords = el.title.split(' ');
+      let title = `<span class="kids">${i + 1}</span> `;
+
+      // 3: 0,1,2; length = 3;
+      for (let j = 0; j < titleWords.length - 1; j++) {
+        title += titleWords[j];
+        title += '<br />';
+      }
+      title += titleWords[titleWords.length - 1];
+
+      h2.innerHTML = title;
+      a.href = `workitem.html?item=${i + 1}`;
+      a.innerText = 'see more';
+
+      textDiv.appendChild(h2);
+      textDiv.appendChild(a);
+
+      highlight.appendChild(textDiv);
+
+      const img = document.createElement('img');
+      img.src = el.smallImage;
+      img.alt = el.smallImageAlt;
+      highlight.appendChild(img);
+
+      newItems.push(highlight);
+    }
+
+    originalItems.forEach((el) => el.remove());
+    newItems.forEach((el) => main.appendChild(el));
   }
 })((window.app = window.app || {}));

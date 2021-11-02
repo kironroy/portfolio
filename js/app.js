@@ -7,6 +7,7 @@
   app.homepage = async function () {
     copyrightInfo();
     await loadPageData();
+    loadNavMenu();
     loadPortfolioPageData();
     wireContactForm();
   };
@@ -141,5 +142,23 @@
 
     originalItems.forEach((el) => el.remove());
     newItems.forEach((el) => main.appendChild(el));
+  }
+
+  function loadNavMenu() {
+    const originalNav = document.querySelectorAll('.work-item-nav');
+    const nav = document.querySelector('nav ul');
+
+    originalNav.forEach((el) => el.remove());
+
+    for (let i = 0; i < app.portfolioItems.length; i++) {
+      const li = document.createElement('li');
+      li.classList.add('work-item-nav');
+      const a = document.createElement('a');
+      a.href = `workitem.html?item=${i + 1}`;
+      a.innerText = `Item ${i + 1}`;
+
+      li.appendChild(a);
+      nav.appendChild(li);
+    }
   }
 })((window.app = window.app || {}));

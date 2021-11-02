@@ -20,6 +20,16 @@
     "technologies": ["PDF", "InDesign", "Custom Clipart Design"]
   },
   {
+    "title": "City Clean",
+    "smallImage": "img/PubWebsite.png",
+    "smallImageAlt": "Shows off a website for a pub. The page has pictures for pizza and pizza-making.",
+    "largeImage": "img/PubWebsiteFull.jpg",
+    "largeImageAlt": "Shows off a website for a pub.  The page has pictures of pizza and pizza making.",
+    "projectText": "Project #3 Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    "challengesText": "Challenges #3 Swift is harder than Objective C! Lorem, ipsum dolor sit amet consectetur adipisicing elit",
+    "technologies": ["iOS", "Swift", "Sketch App 3"]
+  },
+  {
     "title": "Pub website",
     "smallImage": "img/PubWebsite.png",
     "smallImageAlt": "Shows off a website for a pub. The page has pictures for pizza and pizza-making.",

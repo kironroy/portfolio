@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Kids sports website",
+    "smallImage": "img/KidsSportsWebsite.png",
+    "smallImageAlt": "Shows off a website for kids sports that has two kids playing on the front.",
+    "largeImage": "img/KidsSportsWebsiteFull.jpg",
+    "largeImageAlt": "Shows off a website for kids sports with multiple views.",
+    "projectText": "Project #1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    "challengesText": "Challenges #1 Love that dynamic behavior with JavaScript, ipsum dolor sit amet consectetur adipisicing elit",
+    "technologies": ["HTML", "CSS", "JavaScript", "C#"]
+  },
+  {
+    "title": "Pet adoption campaign",
+    "smallImage": "img/PetAdoptionCampaign.png",
+    "smallImageAlt": "Shows off print pieces asking people to adopt pets instead of shopping for them.",
+    "largeImage": "img/PetAdoptionCampaignFull.jpg",
+    "largeImageAlt": "Shows off print pieces asking people to adopt pets instead of shopping for them.",
+    "projectText": "Project #2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    "challengesText": "Challenges #2 Fun Project! Lorem, ipsum dolor sit amet consectetur adipisicing elit",
+    "technologies": ["PDF", "InDesign", "Custom Clipart Design"]
+  },
+  {
+    "title": "Pub website",
+    "smallImage": "img/PubWebsite.png",
+    "smallImageAlt": "Shows off a website for a pub. The page has pictures for pizza and pizza-making.",
+    "largeImage": "img/PubWebsiteFull.jpg",
+    "largeImageAlt": "Shows off a website for a pub.  The page has pictures of pizza and pizza making.",
+    "projectText": "Project #3 Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    "challengesText": "Challenges #3 Swift is harder than Objective C! Lorem, ipsum dolor sit amet consectetur adipisicing elit",
+    "technologies": ["iOS", "Swift", "Sketch App 3"]
+  }
+]

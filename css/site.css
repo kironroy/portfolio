@@ -385,3 +385,49 @@ span.kids {
 
 @media screen and (min-width: 1200px) {
 }
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background-color: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  @page {
+    margin: 1in;
+    size: letter portrait;
+  }
+
+  html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a[href]:after {
+    content: ' (' attr(href) ')';
+  }
+
+  header,
+  footer {
+    display: none;
+  }
+}

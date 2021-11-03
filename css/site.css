@@ -12,7 +12,6 @@ html {
   font-family: 'Zen Maru Gothic', sans-serif;
   font-weight: 300;
   font-size: 36px;
-  letter-spacing: -0.2px;
 }
 
 body {
@@ -30,7 +29,6 @@ h1 {
   font-size: 4rem;
   text-transform: uppercase;
   text-align: right;
-  letter-spacing: -0.3px;
   /* background-color: hsla(86, 100%, 37%);
   padding: 15px; */
 }
@@ -40,7 +38,6 @@ h2 {
   color: #fff;
   font-size: 2rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 nav ul {
@@ -56,7 +53,6 @@ nav ul li {
 nav ul li a {
   color: #222;
   text-decoration: none;
-  letter-spacing: 0.5px;
 }
 
 p {
@@ -93,7 +89,6 @@ button {
   margin: 0.25rem;
   background-color: #e7e7e7;
   color: #000;
-  letter-spacing: -0.2px;
 }
 
 header {
@@ -104,7 +99,6 @@ header {
   text-align: right;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  letter-spacing: -0.4px;
 }
 
 footer {
@@ -260,4 +254,138 @@ span.kids {
   margin-top: 0;
   margin-bottom: 0.05rem;
   color: #fff;
+}
+
+.center-items {
+  text-align: center;
+}
+
+.see-more {
+  color: var(--header-footer-color);
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline dotted var(--highlight-link-dotted);
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #portfolio-section > div > a {
+    font-size: 1rem;
+  }
+
+  .highlight a {
+    font-size: 1.5rem;
+  }
+
+  .see-more {
+    font-size: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  html {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #portfolio-section > div > a {
+    font-size: 1rem;
+  }
+
+  .highlight a {
+    font-size: 1.5rem;
+  }
+
+  .see-more {
+    font-size: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #portfolio-section > div > a {
+    font-size: 1.3rem;
+  }
+
+  .highlight a {
+    font-size: 1.5rem;
+  }
+
+  .see-more {
+    font-size: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #portfolio-section > div > a {
+    font-size: 1.5rem;
+  }
+
+  .highlight a {
+    font-size: 2rem;
+  }
+
+  .see-more {
+    font-size: 2rem;
+  }
+
+  nav ul li a {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
 }

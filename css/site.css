@@ -199,7 +199,7 @@ footer {
 
 .highlight a {
   color: var(--highlight-link-color);
-  text-decoration: underline dotted var(--highlight-link-dotted);
+  text-decoration-style: dotted;
   font-size: 2rem;
 }
 
@@ -264,7 +264,7 @@ span.kids {
   color: var(--header-footer-color);
   text-align: center;
   font-size: 2rem;
-  text-decoration: underline dotted var(--highlight-link-dotted);
+  text-decoration-style: dotted;
 }
 
 @media screen and (max-width: 600px) {
@@ -282,10 +282,6 @@ span.kids {
 
   #portfolio-section > div > a {
     font-size: 1rem;
-  }
-
-  .highlight a {
-    font-size: 1.5rem;
   }
 
   .see-more {
